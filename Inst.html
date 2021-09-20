@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assessment Portal</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <style>
+      body {
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <br />
+    <div class="imain container">
+      <div class="inst">
+        <h2 class="mb-3">Instructions</h2>
+        <h5 class="text-right">Online assessment</h5>
+        <ol>
+          <li>This is an MCQ-based assessment.</li>
+          <li>There are a total of 15 questions in this assessment.</li>
+          <li>A single question will be displayed on the screen at a time.</li>
+          <li>
+            The exam can be navigated using the "Next" and the "Previous"
+            buttons.
+          </li>
+          <li>
+            Each question has four choices, out of which only one is correct.
+          </li>
+          <li>The duration of this assessment is 15 minutes.</li>
+          <li>
+            If the time limit exceeds, the assessment will be auto-submitted.
+          </li>
+          <li>There will be no negative marking.</li>
+          <li>
+            Make sure that you have attempted all the questions before
+            submission.
+          </li>
+          <li>
+            After successful submission of the test, your result will be
+            displayed on the screen.
+          </li>
+        </ol>
+
+        <div class="group">
+          <input
+            type="checkbox"
+            name="check"
+            id="check"
+            onchange="enableCheck(this)"
+          /><label class="ml-2" style="font-size: 14px"
+            >I hereby agree that, I read all instructions and I obey all of them
+            carefully, if I found violating any of instructions then authority
+            can take any action on me.</label
+          >
+        </div>
+
+        <button
+          class="btn btn-primary start"
+          id="startAssessment"
+          disabled
+          onclick="window.location='quiz.html'"
+          style="cursor: pointer; background-color: gray"
+        >
+          Start Assessment
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
