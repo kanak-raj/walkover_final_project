@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Question</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--Animate CSS-->
+	<link rel="stylesheet" href="https://raw.githubusercontent.com/daneden/animate.css/master/animate.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div id="mainDiv">
+        <!-- ==================Admin Panel================ -->
+        <div id="mainPanel" >
+            <div id="panelInner">
+                <div id="header">
+                    <h3>Questions</h3><br>
+                    
+                </div>
+                <div class="timQ">
+                <p>Enter Total NO. of questions:</p>
+                    <input type="text" name ="number" placeholder ="Enter no. of Que" id="no"><br>
+                   <br> <p>Choose your time limit per Ques:</p>
+                    <input type="time" name ="ti" min="00:0" max="00:10" required>
+                    </div>
+                <div id="questionsBody">
+                    <ul id="questionsUl">
+
+                    </ul>
+                    <button class="btn btn-danger homeBtn" onclick="homePage()">Done</button>
+                </div>
+               
+                <div id="addBtnDiv">
+                    <button id="addBtn" class="btn btn-success fa fa-plus" onclick="addQuestion()"></button>
+                    <button id="delAllBtn" class="btn btn-danger fa fa-trash" onclick="dellAll()"></button>
+                </div>
+            </div>
+        </div>
+
+      
+    </div>
+</body>
+</html>
